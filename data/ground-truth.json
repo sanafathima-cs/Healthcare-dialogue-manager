@@ -1,0 +1,167 @@
+
+[
+  {
+    "scenarioId": "SC-001",
+    "scenarioName": "Normal appointment booking",
+    "expected": {
+      "intent": "book",
+      "appointmentType": "general_consultation",
+      "patientId": "PAT-004",
+      "date": "2026-11-03",
+      "time": "10:00",
+      "appointmentStatus": "scheduled",
+      "taskSuccess": true
+    }
+  },
+  {
+    "scenarioId": "SC-002",
+    "scenarioName": "Missing information",
+    "expected": {
+      "intent": "book",
+      "dialogueStatus": "collecting_information",
+      "appointmentCreated": false,
+      "clarificationRequested": true,
+      "taskSuccess": true
+    }
+  },
+  {
+    "scenarioId": "SC-003",
+    "scenarioName": "Out-of-order information",
+    "expected": {
+      "intent": "book",
+      "appointmentType": "general_consultation",
+      "patientId": "PAT-004",
+      "date": "2026-11-04",
+      "time": "13:00",
+      "preConfirmationStatus": "confirming",
+      "appointmentCreatedBeforeConfirmation": false,
+      "taskSuccess": true
+    }
+  },
+  {
+    "scenarioId": "SC-004",
+    "scenarioName": "Multiple details in one message",
+    "expected": {
+      "intent": "book",
+      "appointmentType": "general_consultation",
+      "patientId": "PAT-004",
+      "date": "2026-11-04",
+      "time": "09:30",
+      "appointmentStatus": "scheduled",
+      "taskSuccess": true
+    }
+  },
+  {
+    "scenarioId": "SC-005",
+    "scenarioName": "Correcting appointment time",
+    "expected": {
+      "intent": "book",
+      "appointmentType": "general_consultation",
+      "patientId": "PAT-004",
+      "date": "2026-11-04",
+      "time": "11:30",
+      "appointmentStatus": "scheduled",
+      "correctionApplied": true,
+      "taskSuccess": true
+    }
+  },
+  {
+    "scenarioId": "SC-006",
+    "scenarioName": "Ambiguous time preference",
+    "expected": {
+      "intent": "book",
+      "appointmentType": "general_consultation",
+      "date": "2026-11-04",
+      "ambiguousTimes": ["10:00", "11:00"],
+      "clarificationRequested": true,
+      "appointmentCreated": false,
+      "taskSuccess": true
+    }
+  },
+  {
+    "scenarioId": "SC-007",
+    "scenarioName": "Switching from booking to cancellation",
+    "expected": {
+      "intent": "cancel",
+      "patientId": "PAT-001",
+      "existingAppointmentId": "APT-001",
+      "appointmentStatus": "cancelled",
+      "newAppointmentCreated": false,
+      "taskSuccess": true
+    }
+  },
+  {
+    "scenarioId": "SC-008",
+    "scenarioName": "Unavailable appointment slot",
+    "expected": {
+      "intent": "book",
+      "appointmentType": "general_consultation",
+      "patientId": "PAT-004",
+      "date": "2026-11-05",
+      "requestedTime": "10:30",
+      "availability": "unavailable",
+      "appointmentCreated": false,
+      "suggestedAlternativeTimes": [
+        "09:00",
+        "09:30",
+        "10:00",
+        "11:30"
+      ],
+      "taskSuccess": true
+    }
+  },
+  {
+    "scenarioId": "SC-009",
+    "scenarioName": "Unrelated topic interruption",
+    "expected": {
+      "intent": "book",
+      "appointmentType": "general_consultation",
+      "patientId": "PAT-004",
+      "date": "2026-11-04",
+      "time": "13:00",
+      "appointmentStatus": "scheduled",
+      "bookingContextPreserved": true,
+      "unrelatedQuestionAcknowledged": true,
+      "taskSuccess": true
+    }
+  },
+  {
+    "scenarioId": "SC-010",
+    "scenarioName": "Rejecting appointment confirmation",
+    "expected": {
+      "intent": "book",
+      "appointmentCreated": false,
+      "appointmentStatus": null,
+      "dialogueStatus": "collecting_information",
+      "taskSuccess": true
+    }
+  },
+  {
+    "scenarioId": "SC-011",
+    "scenarioName": "Rescheduling an existing appointment",
+    "expected": {
+      "intent": "reschedule",
+      "existingAppointmentId": "APT-001",
+      "appointmentType": "cardiologist",
+      "patientId": "PAT-001",
+      "date": "2026-11-06",
+      "time": "13:00",
+      "appointmentStatus": "scheduled",
+      "taskSuccess": true
+    }
+  },
+  {
+    "scenarioId": "SC-012",
+    "scenarioName": "Contradictory information and correction",
+    "expected": {
+      "intent": "book",
+      "appointmentType": "general_consultation",
+      "patientId": "PAT-004",
+      "date": "2026-11-05",
+      "time": "09:30",
+      "appointmentStatus": "scheduled",
+      "latestCorrectionApplied": true,
+      "taskSuccess": true
+    }
+  }
+]

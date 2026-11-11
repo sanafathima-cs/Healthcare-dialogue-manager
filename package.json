@@ -4,10 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsx src/api/server.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test src/rule_based/tests/*.test.ts src/appointment/*.test.ts src/llm_based/*.test.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "xstate": "^5.33.2"
+  }
 }

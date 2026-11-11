@@ -1,0 +1,372 @@
+{
+  "referenceTime": "2026-11-02T08:00:00",
+  "scenariosTested": 12,
+  "managers": [
+    {
+      "manager": "Rule-based",
+      "scenariosTested": 12,
+      "taskSuccess": {
+        "successful": 10,
+        "total": 12,
+        "rate": 83.33333333333334
+      },
+      "dialogueTurns": {
+        "totalTurns": 27,
+        "averageTurns": 2.25
+      },
+      "dialogueStateAccuracy": {
+        "correctFields": 61,
+        "totalFields": 65,
+        "accuracy": 93.84615384615384,
+        "scenarios": [
+          {
+            "scenarioId": "SC-001",
+            "correctFields": 4,
+            "checkedFields": 4,
+            "accuracy": 100
+          },
+          {
+            "scenarioId": "SC-002",
+            "correctFields": 4,
+            "checkedFields": 4,
+            "accuracy": 100
+          },
+          {
+            "scenarioId": "SC-003",
+            "correctFields": 9,
+            "checkedFields": 9,
+            "accuracy": 100
+          },
+          {
+            "scenarioId": "SC-004",
+            "correctFields": 4,
+            "checkedFields": 4,
+            "accuracy": 100
+          },
+          {
+            "scenarioId": "SC-005",
+            "correctFields": 8,
+            "checkedFields": 8,
+            "accuracy": 100
+          },
+          {
+            "scenarioId": "SC-006",
+            "correctFields": 3,
+            "checkedFields": 4,
+            "accuracy": 75
+          },
+          {
+            "scenarioId": "SC-007",
+            "correctFields": 6,
+            "checkedFields": 6,
+            "accuracy": 100
+          },
+          {
+            "scenarioId": "SC-008",
+            "correctFields": 5,
+            "checkedFields": 5,
+            "accuracy": 100
+          },
+          {
+            "scenarioId": "SC-009",
+            "correctFields": 8,
+            "checkedFields": 8,
+            "accuracy": 100
+          },
+          {
+            "scenarioId": "SC-010",
+            "correctFields": 4,
+            "checkedFields": 4,
+            "accuracy": 100
+          },
+          {
+            "scenarioId": "SC-011",
+            "correctFields": 4,
+            "checkedFields": 5,
+            "accuracy": 80
+          },
+          {
+            "scenarioId": "SC-012",
+            "correctFields": 2,
+            "checkedFields": 4,
+            "accuracy": 50
+          }
+        ]
+      },
+      "latency": {
+        "messagesMeasured": 18,
+        "averageMs": 2,
+        "medianMs": 1
+      },
+      "scenarios": [
+        {
+          "scenarioId": "SC-001",
+          "scenario": "Normal appointment booking",
+          "taskSuccess": true,
+          "reason": "Correct appointment booking",
+          "interruptionAcknowledged": null
+        },
+        {
+          "scenarioId": "SC-002",
+          "scenario": "Missing information",
+          "taskSuccess": true,
+          "reason": "Checks whether missing information was requested",
+          "interruptionAcknowledged": null
+        },
+        {
+          "scenarioId": "SC-003",
+          "scenario": "Out-of-order information",
+          "taskSuccess": true,
+          "reason": "Correct booking after receiving information out of order",
+          "interruptionAcknowledged": null
+        },
+        {
+          "scenarioId": "SC-004",
+          "scenario": "Multiple details in one message",
+          "taskSuccess": true,
+          "reason": "Correct booking from multiple details in one message",
+          "interruptionAcknowledged": null
+        },
+        {
+          "scenarioId": "SC-005",
+          "scenario": "Correcting appointment time",
+          "taskSuccess": true,
+          "reason": "Checks whether the corrected appointment time was applied",
+          "interruptionAcknowledged": null
+        },
+        {
+          "scenarioId": "SC-006",
+          "scenario": "Ambiguous time preference",
+          "taskSuccess": false,
+          "reason": "Checks whether the manager asks the user to resolve the ambiguous time",
+          "interruptionAcknowledged": null
+        },
+        {
+          "scenarioId": "SC-007",
+          "scenario": "Switching from booking to cancellation",
+          "taskSuccess": true,
+          "reason": "Checks whether the existing appointment was cancelled without creating another",
+          "interruptionAcknowledged": null
+        },
+        {
+          "scenarioId": "SC-008",
+          "scenario": "Unavailable appointment slot",
+          "taskSuccess": true,
+          "reason": "Checks whether the unavailable slot was rejected and alternatives were suggested",
+          "interruptionAcknowledged": null
+        },
+        {
+          "scenarioId": "SC-009",
+          "scenario": "Unrelated topic interruption",
+          "taskSuccess": true,
+          "reason": "Checks whether the booking context was preserved and the appointment was completed",
+          "interruptionAcknowledged": false
+        },
+        {
+          "scenarioId": "SC-010",
+          "scenario": "Rejecting appointment confirmation",
+          "taskSuccess": true,
+          "reason": "Checks whether the manager respected the user's rejection",
+          "interruptionAcknowledged": null
+        },
+        {
+          "scenarioId": "SC-011",
+          "scenario": "Rescheduling an existing appointment",
+          "taskSuccess": true,
+          "reason": "Checks whether the existing appointment was rescheduled correctly",
+          "interruptionAcknowledged": null
+        },
+        {
+          "scenarioId": "SC-012",
+          "scenario": "Contradictory information and correction",
+          "taskSuccess": false,
+          "reason": "Checks whether the latest correction was applied",
+          "interruptionAcknowledged": null
+        }
+      ]
+    },
+    {
+      "manager": "LLM-based",
+      "scenariosTested": 12,
+      "taskSuccess": {
+        "successful": 9,
+        "total": 12,
+        "rate": 75
+      },
+      "dialogueTurns": {
+        "totalTurns": 27,
+        "averageTurns": 2.25
+      },
+      "dialogueStateAccuracy": {
+        "correctFields": 59,
+        "totalFields": 65,
+        "accuracy": 90.76923076923077,
+        "scenarios": [
+          {
+            "scenarioId": "SC-001",
+            "correctFields": 4,
+            "checkedFields": 4,
+            "accuracy": 100
+          },
+          {
+            "scenarioId": "SC-002",
+            "correctFields": 4,
+            "checkedFields": 4,
+            "accuracy": 100
+          },
+          {
+            "scenarioId": "SC-003",
+            "correctFields": 9,
+            "checkedFields": 9,
+            "accuracy": 100
+          },
+          {
+            "scenarioId": "SC-004",
+            "correctFields": 4,
+            "checkedFields": 4,
+            "accuracy": 100
+          },
+          {
+            "scenarioId": "SC-005",
+            "correctFields": 6,
+            "checkedFields": 8,
+            "accuracy": 75
+          },
+          {
+            "scenarioId": "SC-006",
+            "correctFields": 3,
+            "checkedFields": 4,
+            "accuracy": 75
+          },
+          {
+            "scenarioId": "SC-007",
+            "correctFields": 6,
+            "checkedFields": 6,
+            "accuracy": 100
+          },
+          {
+            "scenarioId": "SC-008",
+            "correctFields": 5,
+            "checkedFields": 5,
+            "accuracy": 100
+          },
+          {
+            "scenarioId": "SC-009",
+            "correctFields": 8,
+            "checkedFields": 8,
+            "accuracy": 100
+          },
+          {
+            "scenarioId": "SC-010",
+            "correctFields": 4,
+            "checkedFields": 4,
+            "accuracy": 100
+          },
+          {
+            "scenarioId": "SC-011",
+            "correctFields": 4,
+            "checkedFields": 5,
+            "accuracy": 80
+          },
+          {
+            "scenarioId": "SC-012",
+            "correctFields": 2,
+            "checkedFields": 4,
+            "accuracy": 50
+          }
+        ]
+      },
+      "latency": {
+        "messagesMeasured": 18,
+        "averageMs": 4868.944444444444,
+        "medianMs": 4513.5
+      },
+      "scenarios": [
+        {
+          "scenarioId": "SC-001",
+          "scenario": "Normal appointment booking",
+          "taskSuccess": true,
+          "reason": "Correct appointment booking",
+          "interruptionAcknowledged": null
+        },
+        {
+          "scenarioId": "SC-002",
+          "scenario": "Missing information",
+          "taskSuccess": true,
+          "reason": "Checks whether missing information was requested",
+          "interruptionAcknowledged": null
+        },
+        {
+          "scenarioId": "SC-003",
+          "scenario": "Out-of-order information",
+          "taskSuccess": true,
+          "reason": "Correct booking after receiving information out of order",
+          "interruptionAcknowledged": null
+        },
+        {
+          "scenarioId": "SC-004",
+          "scenario": "Multiple details in one message",
+          "taskSuccess": true,
+          "reason": "Correct booking from multiple details in one message",
+          "interruptionAcknowledged": null
+        },
+        {
+          "scenarioId": "SC-005",
+          "scenario": "Correcting appointment time",
+          "taskSuccess": false,
+          "reason": "Checks whether the corrected appointment time was applied",
+          "interruptionAcknowledged": null
+        },
+        {
+          "scenarioId": "SC-006",
+          "scenario": "Ambiguous time preference",
+          "taskSuccess": false,
+          "reason": "Checks whether the manager asks the user to resolve the ambiguous time",
+          "interruptionAcknowledged": null
+        },
+        {
+          "scenarioId": "SC-007",
+          "scenario": "Switching from booking to cancellation",
+          "taskSuccess": true,
+          "reason": "Checks whether the existing appointment was cancelled without creating another",
+          "interruptionAcknowledged": null
+        },
+        {
+          "scenarioId": "SC-008",
+          "scenario": "Unavailable appointment slot",
+          "taskSuccess": true,
+          "reason": "Checks whether the unavailable slot was rejected and alternatives were suggested",
+          "interruptionAcknowledged": null
+        },
+        {
+          "scenarioId": "SC-009",
+          "scenario": "Unrelated topic interruption",
+          "taskSuccess": true,
+          "reason": "Checks whether the booking context was preserved and the appointment was completed",
+          "interruptionAcknowledged": false
+        },
+        {
+          "scenarioId": "SC-010",
+          "scenario": "Rejecting appointment confirmation",
+          "taskSuccess": true,
+          "reason": "Checks whether the manager respected the user's rejection",
+          "interruptionAcknowledged": null
+        },
+        {
+          "scenarioId": "SC-011",
+          "scenario": "Rescheduling an existing appointment",
+          "taskSuccess": true,
+          "reason": "Checks whether the existing appointment was rescheduled correctly",
+          "interruptionAcknowledged": null
+        },
+        {
+          "scenarioId": "SC-012",
+          "scenario": "Contradictory information and correction",
+          "taskSuccess": false,
+          "reason": "Checks whether the latest correction was applied",
+          "interruptionAcknowledged": null
+        }
+      ]
+    }
+  ]
+}

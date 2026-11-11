@@ -1,0 +1,26 @@
+[
+  {
+    "id": "APT-001",
+    "appointmentType": "cardiologist",
+    "date": "2026-11-05",
+    "time": "10:30",
+    "patientId": "PAT-001",
+    "status": "cancelled"
+  },
+  {
+    "id": "APT-002",
+    "appointmentType": "general_consultation",
+    "date": "2026-11-05",
+    "time": "11:00",
+    "patientId": "PAT-002",
+    "status": "scheduled"
+  },
+  {
+    "id": "APT-003",
+    "appointmentType": "pediatric",
+    "date": "2026-11-06",
+    "time": "09:00",
+    "patientId": "PAT-003",
+    "status": "scheduled"
+  }
+]

@@ -1,0 +1,184 @@
+
+{
+  "scenarios": [
+    {
+      "scenarioId": "SC-001",
+      "expectedStates": [
+        {
+          "messageNumber": 1,
+          "intent": "book",
+          "appointmentType": "general_consultation",
+          "preferredDate": "2026-11-03",
+          "preferredClockTime": "10:00"
+        }
+      ]
+    },
+    {
+      "scenarioId": "SC-002",
+      "expectedStates": [
+        {
+          "messageNumber": 1,
+          "intent": "book",
+          "appointmentType": null,
+          "preferredDate": null,
+          "preferredClockTime": null
+        }
+      ]
+    },
+    {
+      "scenarioId": "SC-003",
+      "expectedStates": [
+        {
+          "messageNumber": 1,
+          "intent": "book",
+          "preferredDate": "2026-11-04"
+        },
+        {
+          "messageNumber": 2,
+          "intent": "book",
+          "preferredDate": "2026-11-04",
+          "preferredClockTime": "13:00"
+        },
+        {
+          "messageNumber": 3,
+          "intent": "book",
+          "appointmentType": "general_consultation",
+          "preferredDate": "2026-11-04",
+          "preferredClockTime": "13:00"
+        }
+      ]
+    },
+    {
+      "scenarioId": "SC-004",
+      "expectedStates": [
+        {
+          "messageNumber": 1,
+          "intent": "book",
+          "appointmentType": "general_consultation",
+          "preferredDate": "2026-11-04",
+          "preferredClockTime": "09:30"
+        }
+      ]
+    },
+    {
+      "scenarioId": "SC-005",
+      "expectedStates": [
+        {
+          "messageNumber": 1,
+          "intent": "book",
+          "appointmentType": "general_consultation",
+          "preferredDate": "2026-11-04",
+          "preferredClockTime": "10:00"
+        },
+        {
+          "messageNumber": 2,
+          "intent": "book",
+          "appointmentType": "general_consultation",
+          "preferredDate": "2026-11-04",
+          "preferredClockTime": "11:30"
+        }
+      ]
+    },
+    {
+      "scenarioId": "SC-006",
+      "expectedStates": [
+        {
+          "messageNumber": 1,
+          "intent": "book",
+          "appointmentType": "general_consultation",
+          "preferredDate": "2026-11-04",
+          "preferredClockTime": null
+        }
+      ]
+    },
+    {
+      "scenarioId": "SC-007",
+      "expectedStates": [
+        {
+          "messageNumber": 1,
+          "intent": "book",
+          "appointmentType": "general_consultation",
+          "preferredDate": "2026-11-04",
+          "preferredClockTime": "13:00"
+        },
+        {
+          "messageNumber": 2,
+          "intent": "cancel",
+          "existingAppointmentId": "APT-001"
+        }
+      ]
+    },
+    {
+      "scenarioId": "SC-008",
+      "expectedStates": [
+        {
+          "messageNumber": 1,
+          "intent": "book",
+          "appointmentType": "general_consultation",
+          "preferredDate": "2026-11-05",
+          "preferredClockTime": "10:30",
+          "availability": "unavailable"
+        }
+      ]
+    },
+    {
+      "scenarioId": "SC-009",
+      "expectedStates": [
+        {
+          "messageNumber": 1,
+          "intent": "book",
+          "preferredDate": "2026-11-04"
+        },
+        {
+          "messageNumber": 2,
+          "intent": "book",
+          "preferredDate": "2026-11-04"
+        },
+        {
+          "messageNumber": 3,
+          "intent": "book",
+          "appointmentType": "general_consultation",
+          "preferredDate": "2026-11-04",
+          "preferredClockTime": "13:00"
+        }
+      ]
+    },
+    {
+      "scenarioId": "SC-010",
+      "expectedStates": [
+        {
+          "messageNumber": 1,
+          "intent": "book",
+          "appointmentType": "general_consultation",
+          "preferredDate": "2026-11-04",
+          "preferredClockTime": "14:00"
+        }
+      ]
+    },
+    {
+      "scenarioId": "SC-011",
+      "expectedStates": [
+        {
+          "messageNumber": 1,
+          "intent": "reschedule",
+          "appointmentType": "cardiologist",
+          "preferredDate": "2026-11-06",
+          "preferredClockTime": "13:00",
+          "existingAppointmentId": "APT-001"
+        }
+      ]
+    },
+    {
+      "scenarioId": "SC-012",
+      "expectedStates": [
+        {
+          "messageNumber": 1,
+          "intent": "book",
+          "appointmentType": "general_consultation",
+          "preferredDate": "2026-11-05",
+          "preferredClockTime": "09:30"
+        }
+      ]
+    }
+  ]
+}

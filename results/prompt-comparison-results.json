@@ -1,0 +1,456 @@
+{
+  "results": [
+    {
+      "testCaseId": "P-001",
+      "description": "Normal booking request",
+      "promptVariant": "baseline",
+      "message": "I want to book a cardiologist appointment tomorrow at 10:30 AM.",
+      "extractedInformation": {
+        "intent": "book",
+        "appointmentType": "cardiologist",
+        "preferredDate": "2026-11-03",
+        "preferredTime": null,
+        "preferredClockTime": "10:30",
+        "reason": "tomorrow",
+        "existingAppointmentId": null
+      },
+      "latencyMs": 9862,
+      "success": true,
+      "error": null
+    },
+    {
+      "testCaseId": "P-001",
+      "description": "Normal booking request",
+      "promptVariant": "detailed",
+      "message": "I want to book a cardiologist appointment tomorrow at 10:30 AM.",
+      "extractedInformation": {
+        "intent": "book",
+        "appointmentType": "cardiologist",
+        "preferredDate": "2026-11-03",
+        "preferredTime": "morning",
+        "preferredClockTime": null,
+        "reason": null,
+        "existingAppointmentId": null
+      },
+      "latencyMs": 6787,
+      "success": true,
+      "error": null
+    },
+    {
+      "testCaseId": "P-001",
+      "description": "Normal booking request",
+      "promptVariant": "strict",
+      "message": "I want to book a cardiologist appointment tomorrow at 10:30 AM.",
+      "extractedInformation": {
+        "intent": "book",
+        "appointmentType": "cardiologist",
+        "preferredDate": "2026-11-03",
+        "preferredTime": null,
+        "preferredClockTime": "10:30",
+        "reason": null,
+        "existingAppointmentId": null
+      },
+      "latencyMs": 7503,
+      "success": true,
+      "error": null
+    },
+    {
+      "testCaseId": "P-002",
+      "description": "Missing information",
+      "promptVariant": "baseline",
+      "message": "I want to book an appointment with a cardiologist.",
+      "extractedInformation": {
+        "intent": "book",
+        "appointmentType": "cardiologist",
+        "preferredDate": null,
+        "preferredTime": null,
+        "preferredClockTime": null,
+        "reason": "I want to book an appointment with a cardiologist.",
+        "existingAppointmentId": null
+      },
+      "latencyMs": 5398,
+      "success": true,
+      "error": null
+    },
+    {
+      "testCaseId": "P-002",
+      "description": "Missing information",
+      "promptVariant": "detailed",
+      "message": "I want to book an appointment with a cardiologist.",
+      "extractedInformation": {
+        "intent": "book",
+        "appointmentType": "cardiologist",
+        "preferredDate": "2026-11-02",
+        "preferredTime": "morning",
+        "preferredClockTime": null,
+        "reason": null,
+        "existingAppointmentId": null
+      },
+      "latencyMs": 7164,
+      "success": true,
+      "error": null
+    },
+    {
+      "testCaseId": "P-002",
+      "description": "Missing information",
+      "promptVariant": "strict",
+      "message": "I want to book an appointment with a cardiologist.",
+      "extractedInformation": {
+        "intent": "book",
+        "appointmentType": "cardiologist",
+        "preferredDate": "2026-11-02",
+        "preferredTime": null,
+        "preferredClockTime": null,
+        "reason": null,
+        "existingAppointmentId": null
+      },
+      "latencyMs": 6110,
+      "success": true,
+      "error": null
+    },
+    {
+      "testCaseId": "P-003",
+      "description": "Out-of-order information",
+      "promptVariant": "baseline",
+      "message": "Next Friday works for me, preferably in the afternoon. I need a pediatric appointment.",
+      "extractedInformation": {
+        "intent": "book",
+        "appointmentType": "pediatric",
+        "preferredDate": "2026-11-05",
+        "preferredTime": "afternoon",
+        "preferredClockTime": "14:00",
+        "reason": "I need a pediatric appointment",
+        "existingAppointmentId": null
+      },
+      "latencyMs": 4924,
+      "success": true,
+      "error": null
+    },
+    {
+      "testCaseId": "P-003",
+      "description": "Out-of-order information",
+      "promptVariant": "detailed",
+      "message": "Next Friday works for me, preferably in the afternoon. I need a pediatric appointment.",
+      "extractedInformation": {
+        "intent": "book",
+        "appointmentType": "pediatric",
+        "preferredDate": "2026-11-05",
+        "preferredTime": "afternoon",
+        "preferredClockTime": null,
+        "reason": null,
+        "existingAppointmentId": null
+      },
+      "latencyMs": 6206,
+      "success": true,
+      "error": null
+    },
+    {
+      "testCaseId": "P-003",
+      "description": "Out-of-order information",
+      "promptVariant": "strict",
+      "message": "Next Friday works for me, preferably in the afternoon. I need a pediatric appointment.",
+      "extractedInformation": {
+        "intent": "book",
+        "appointmentType": "pediatric",
+        "preferredDate": "2026-11-05",
+        "preferredTime": "afternoon",
+        "preferredClockTime": "14:30",
+        "reason": "I need a pediatric appointment",
+        "existingAppointmentId": null
+      },
+      "latencyMs": 5942,
+      "success": true,
+      "error": null
+    },
+    {
+      "testCaseId": "P-004",
+      "description": "Multiple details in one message",
+      "promptVariant": "baseline",
+      "message": "Book a general consultation tomorrow morning because I have a headache.",
+      "extractedInformation": {
+        "intent": "book",
+        "appointmentType": "general_consultation",
+        "preferredDate": "2026-11-03",
+        "preferredTime": "morning",
+        "preferredClockTime": "10:00",
+        "reason": "headache",
+        "existingAppointmentId": null
+      },
+      "latencyMs": 4183,
+      "success": true,
+      "error": null
+    },
+    {
+      "testCaseId": "P-004",
+      "description": "Multiple details in one message",
+      "promptVariant": "detailed",
+      "message": "Book a general consultation tomorrow morning because I have a headache.",
+      "extractedInformation": {
+        "intent": "book",
+        "appointmentType": "general_consultation",
+        "preferredDate": "2026-11-03",
+        "preferredTime": "morning",
+        "preferredClockTime": null,
+        "reason": "I have a headache",
+        "existingAppointmentId": null
+      },
+      "latencyMs": 6717,
+      "success": true,
+      "error": null
+    },
+    {
+      "testCaseId": "P-004",
+      "description": "Multiple details in one message",
+      "promptVariant": "strict",
+      "message": "Book a general consultation tomorrow morning because I have a headache.",
+      "extractedInformation": {
+        "intent": "book",
+        "appointmentType": "general_consultation",
+        "preferredDate": "2026-11-03",
+        "preferredTime": "morning",
+        "preferredClockTime": null,
+        "reason": "headache",
+        "existingAppointmentId": null
+      },
+      "latencyMs": 6026,
+      "success": true,
+      "error": null
+    },
+    {
+      "testCaseId": "P-005",
+      "description": "Correction of appointment time",
+      "promptVariant": "baseline",
+      "message": "Actually, I meant 2 PM, not 10 AM.",
+      "extractedInformation": {
+        "intent": "book",
+        "appointmentType": "cardiologist",
+        "preferredDate": "2026-11-04",
+        "preferredTime": null,
+        "preferredClockTime": "14:00",
+        "reason": null,
+        "existingAppointmentId": null
+      },
+      "latencyMs": 5493,
+      "success": true,
+      "error": null
+    },
+    {
+      "testCaseId": "P-005",
+      "description": "Correction of appointment time",
+      "promptVariant": "detailed",
+      "message": "Actually, I meant 2 PM, not 10 AM.",
+      "extractedInformation": {
+        "intent": "book",
+        "appointmentType": "cardiologist",
+        "preferredDate": "2026-11-02",
+        "preferredTime": "specific_time",
+        "preferredClockTime": "14:00",
+        "reason": null,
+        "existingAppointmentId": null
+      },
+      "latencyMs": 7125,
+      "success": true,
+      "error": null
+    },
+    {
+      "testCaseId": "P-005",
+      "description": "Correction of appointment time",
+      "promptVariant": "strict",
+      "message": "Actually, I meant 2 PM, not 10 AM.",
+      "extractedInformation": {
+        "intent": "book",
+        "appointmentType": "cardiologist",
+        "preferredDate": "2026-11-04",
+        "preferredTime": "specific_time",
+        "preferredClockTime": "14:30",
+        "reason": null,
+        "existingAppointmentId": null
+      },
+      "latencyMs": 6289,
+      "success": true,
+      "error": null
+    },
+    {
+      "testCaseId": "P-006",
+      "description": "Ambiguous time preference",
+      "promptVariant": "baseline",
+      "message": "I would prefer sometime around 10 or 11.",
+      "extractedInformation": {
+        "intent": "book",
+        "appointmentType": "general_consultation",
+        "preferredDate": "2026-11-02",
+        "preferredTime": "specific_time",
+        "preferredClockTime": "10:30",
+        "reason": "sometime around 10 or 11",
+        "existingAppointmentId": null
+      },
+      "latencyMs": 5449,
+      "success": true,
+      "error": null
+    },
+    {
+      "testCaseId": "P-006",
+      "description": "Ambiguous time preference",
+      "promptVariant": "detailed",
+      "message": "I would prefer sometime around 10 or 11.",
+      "extractedInformation": {
+        "intent": "book",
+        "appointmentType": "general_consultation",
+        "preferredDate": "2026-11-02",
+        "preferredTime": "specific_time",
+        "preferredClockTime": "14:00",
+        "reason": null,
+        "existingAppointmentId": null
+      },
+      "latencyMs": 6847,
+      "success": true,
+      "error": null
+    },
+    {
+      "testCaseId": "P-006",
+      "description": "Ambiguous time preference",
+      "promptVariant": "strict",
+      "message": "I would prefer sometime around 10 or 11.",
+      "extractedInformation": {
+        "intent": "book",
+        "appointmentType": "general_consultation",
+        "preferredDate": "2026-11-02",
+        "preferredTime": "specific_time",
+        "preferredClockTime": null,
+        "reason": null,
+        "existingAppointmentId": null
+      },
+      "latencyMs": 5850,
+      "success": true,
+      "error": null
+    },
+    {
+      "testCaseId": "P-007",
+      "description": "Cancellation request",
+      "promptVariant": "baseline",
+      "message": "I want to cancel appointment APT-001.",
+      "extractedInformation": {
+        "intent": "cancel",
+        "appointmentType": null,
+        "preferredDate": null,
+        "preferredTime": null,
+        "preferredClockTime": null,
+        "reason": "cancel appointment APT-001",
+        "existingAppointmentId": "APT-001"
+      },
+      "latencyMs": 4138,
+      "success": true,
+      "error": null
+    },
+    {
+      "testCaseId": "P-007",
+      "description": "Cancellation request",
+      "promptVariant": "detailed",
+      "message": "I want to cancel appointment APT-001.",
+      "extractedInformation": {
+        "intent": "cancel",
+        "appointmentType": null,
+        "preferredDate": null,
+        "preferredTime": null,
+        "preferredClockTime": null,
+        "reason": null,
+        "existingAppointmentId": "APT-001"
+      },
+      "latencyMs": 5863,
+      "success": true,
+      "error": null
+    },
+    {
+      "testCaseId": "P-007",
+      "description": "Cancellation request",
+      "promptVariant": "strict",
+      "message": "I want to cancel appointment APT-001.",
+      "extractedInformation": {
+        "intent": "cancel",
+        "appointmentType": null,
+        "preferredDate": null,
+        "preferredTime": null,
+        "preferredClockTime": null,
+        "reason": "cancel appointment APT-001",
+        "existingAppointmentId": "APT-001"
+      },
+      "latencyMs": 5667,
+      "success": true,
+      "error": null
+    },
+    {
+      "testCaseId": "P-008",
+      "description": "Rescheduling request",
+      "promptVariant": "baseline",
+      "message": "Please reschedule my appointment APT-001 to next Monday at 3 PM.",
+      "extractedInformation": {
+        "intent": "reschedule",
+        "appointmentType": "general_consultation",
+        "preferredDate": "2026-11-07",
+        "preferredTime": "specific_time",
+        "preferredClockTime": "15:00",
+        "reason": "Please reschedule my appointment APT-001",
+        "existingAppointmentId": "APT-001"
+      },
+      "latencyMs": 4707,
+      "success": true,
+      "error": null
+    },
+    {
+      "testCaseId": "P-008",
+      "description": "Rescheduling request",
+      "promptVariant": "detailed",
+      "message": "Please reschedule my appointment APT-001 to next Monday at 3 PM.",
+      "extractedInformation": {
+        "intent": "reschedule",
+        "appointmentType": null,
+        "preferredDate": "2026-11-07",
+        "preferredTime": "afternoon",
+        "preferredClockTime": null,
+        "reason": "I have a headache",
+        "existingAppointmentId": "APT-001"
+      },
+      "latencyMs": 7446,
+      "success": true,
+      "error": null
+    },
+    {
+      "testCaseId": "P-008",
+      "description": "Rescheduling request",
+      "promptVariant": "strict",
+      "message": "Please reschedule my appointment APT-001 to next Monday at 3 PM.",
+      "extractedInformation": {
+        "intent": "reschedule",
+        "appointmentType": null,
+        "preferredDate": "2026-11-07",
+        "preferredTime": null,
+        "preferredClockTime": null,
+        "reason": "Please reschedule my appointment APT-001",
+        "existingAppointmentId": "APT-001"
+      },
+      "latencyMs": 6723,
+      "success": true,
+      "error": null
+    }
+  ],
+  "accuracySummary": [
+    {
+      "promptVariant": "baseline",
+      "correctFields": 41,
+      "totalFields": 56,
+      "accuracyPercentage": 73.21
+    },
+    {
+      "promptVariant": "detailed",
+      "correctFields": 42,
+      "totalFields": 56,
+      "accuracyPercentage": 75
+    },
+    {
+      "promptVariant": "strict",
+      "correctFields": 44,
+      "totalFields": 56,
+      "accuracyPercentage": 78.57
+    }
+  ]
+}

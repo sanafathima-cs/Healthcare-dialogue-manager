@@ -1,0 +1,177 @@
+{
+  "referenceTime": "2026-11-02T08:00:00",
+  "scenario": {
+    "name": "Normal appointment booking",
+    "messages": [
+      "I want to book a general consultation on 2026-11-03 at 10:00."
+    ]
+  },
+  "results": [
+    {
+      "manager": "Rule-based",
+      "scenario": "Normal appointment booking",
+      "turns": [
+        {
+          "patientMessage": "I want to book a general consultation on 2026-11-03 at 10:00.",
+          "systemResponse": "The 10:00 slot is available. Would you like to confirm?",
+          "latencyMs": 1,
+          "dialogueState": {
+            "intent": "book",
+            "appointmentType": "general_consultation",
+            "preferredDate": "2026-11-03",
+            "preferredTime": "specific_time",
+            "preferredClockTime": "10:00",
+            "reason": null,
+            "status": "confirming",
+            "availability": "available",
+            "existingAppointmentId": null
+          }
+        },
+        {
+          "patientMessage": "yes",
+          "systemResponse": "Your appointment is confirmed. Appointment ID: APT-1001",
+          "latencyMs": 0,
+          "dialogueState": {
+            "intent": "book",
+            "appointmentType": "general_consultation",
+            "preferredDate": "2026-11-03",
+            "preferredTime": "specific_time",
+            "preferredClockTime": "10:00",
+            "reason": null,
+            "status": "completed",
+            "availability": "available",
+            "existingAppointmentId": null
+          }
+        }
+      ],
+      "finalDialogueState": {
+        "intent": "book",
+        "appointmentType": "general_consultation",
+        "preferredDate": "2026-11-03",
+        "preferredTime": "specific_time",
+        "preferredClockTime": "10:00",
+        "reason": null,
+        "status": "completed",
+        "availability": "available",
+        "existingAppointmentId": null
+      },
+      "appointmentsAfterRun": [
+        {
+          "id": "APT-001",
+          "appointmentType": "cardiologist",
+          "date": "2026-11-05",
+          "time": "10:30",
+          "patientId": "PAT-001",
+          "status": "scheduled"
+        },
+        {
+          "id": "APT-002",
+          "appointmentType": "general_consultation",
+          "date": "2026-11-05",
+          "time": "11:00",
+          "patientId": "PAT-002",
+          "status": "scheduled"
+        },
+        {
+          "id": "APT-003",
+          "appointmentType": "pediatric",
+          "date": "2026-11-06",
+          "time": "09:00",
+          "patientId": "PAT-003",
+          "status": "scheduled"
+        },
+        {
+          "id": "APT-1001",
+          "appointmentType": "general_consultation",
+          "date": "2026-11-03",
+          "time": "10:00",
+          "patientId": "PAT-004",
+          "status": "scheduled"
+        }
+      ]
+    },
+    {
+      "manager": "LLM-based",
+      "scenario": "Normal appointment booking",
+      "turns": [
+        {
+          "patientMessage": "I want to book a general consultation on 2026-11-03 at 10:00.",
+          "systemResponse": "The general_consultation appointment is available on 2026-11-03 at 10:00. Would you like to confirm the booking?",
+          "latencyMs": 3473,
+          "dialogueState": {
+            "intent": "book",
+            "appointmentType": "general_consultation",
+            "preferredDate": "2026-11-03",
+            "preferredTime": null,
+            "preferredClockTime": "10:00",
+            "reason": null,
+            "status": "confirming",
+            "availability": "available",
+            "existingAppointmentId": "null"
+          }
+        },
+        {
+          "patientMessage": "yes",
+          "systemResponse": "Your appointment is confirmed. Appointment ID: APT-1001",
+          "latencyMs": 1,
+          "dialogueState": {
+            "intent": null,
+            "appointmentType": null,
+            "preferredDate": null,
+            "preferredTime": null,
+            "preferredClockTime": null,
+            "reason": null,
+            "status": "collecting_information",
+            "availability": "not_checked",
+            "existingAppointmentId": null
+          }
+        }
+      ],
+      "finalDialogueState": {
+        "intent": null,
+        "appointmentType": null,
+        "preferredDate": null,
+        "preferredTime": null,
+        "preferredClockTime": null,
+        "reason": null,
+        "status": "collecting_information",
+        "availability": "not_checked",
+        "existingAppointmentId": null
+      },
+      "appointmentsAfterRun": [
+        {
+          "id": "APT-001",
+          "appointmentType": "cardiologist",
+          "date": "2026-11-05",
+          "time": "10:30",
+          "patientId": "PAT-001",
+          "status": "scheduled"
+        },
+        {
+          "id": "APT-002",
+          "appointmentType": "general_consultation",
+          "date": "2026-11-05",
+          "time": "11:00",
+          "patientId": "PAT-002",
+          "status": "scheduled"
+        },
+        {
+          "id": "APT-003",
+          "appointmentType": "pediatric",
+          "date": "2026-11-06",
+          "time": "09:00",
+          "patientId": "PAT-003",
+          "status": "scheduled"
+        },
+        {
+          "id": "APT-1001",
+          "appointmentType": "general_consultation",
+          "date": "2026-11-03",
+          "time": "10:00",
+          "patientId": "PAT-004",
+          "status": "scheduled"
+        }
+      ]
+    }
+  ]
+}
