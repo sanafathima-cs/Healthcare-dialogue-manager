@@ -32,10 +32,10 @@ npm run typecheck
 
 Running Experiments :-
 
-Run the first comparison experiment
+Run the first comparison experiment :- 
 npx tsx experiments/first-comparison.ts
 
-Run the second prompt comparison Experiment
+Run the second prompt comparison Experiment :-
 npx tsx experiments/prompt-comparison.ts
 
 The experiment results are stored in the results/ directory
