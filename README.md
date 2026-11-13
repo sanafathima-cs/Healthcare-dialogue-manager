@@ -38,4 +38,7 @@ npx tsx experiments/first-comparison.ts
 Run the second prompt comparison Experiment :-
 npx tsx experiments/prompt-comparison.ts
 
-The experiment results are stored in the results/ directory
+The experiment results are stored in the results/ directory.
+
+Latency Evaluation:-
+npx tsx src/evaluation/evaluate-experiments.ts
