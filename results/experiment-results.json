@@ -204,7 +204,7 @@
           "stepType": "message",
           "patientMessage": "I want to book a general consultation on 2026-11-03 at 10:00.",
           "systemResponse": "The 10:00 slot is available. Would you like to confirm?",
-          "latencyMs": 2,
+          "latencyMs": 1,
           "dialogueState": {
             "intent": "book",
             "appointmentType": "general_consultation",
@@ -222,7 +222,7 @@
           "stepType": "confirmation",
           "patientMessage": "yes",
           "systemResponse": "Your appointment is confirmed. Appointment ID: APT-1001",
-          "latencyMs": 0,
+          "latencyMs": 1,
           "dialogueState": {
             "intent": "book",
             "appointmentType": "general_consultation",
@@ -292,7 +292,7 @@
           "stepType": "message",
           "patientMessage": "I want to book a general consultation on 2026-11-03 at 10:00.",
           "systemResponse": "The general_consultation appointment is available on 2026-11-03 at 10:00. Would you like to confirm the booking?",
-          "latencyMs": 8379,
+          "latencyMs": 9802,
           "dialogueState": {
             "intent": "book",
             "appointmentType": "general_consultation",
@@ -380,7 +380,7 @@
           "stepType": "message",
           "patientMessage": "I want to book an appointment.",
           "systemResponse": "What type of appointment would you like?",
-          "latencyMs": 1,
+          "latencyMs": 2,
           "dialogueState": {
             "intent": "book",
             "appointmentType": null,
@@ -442,7 +442,7 @@
           "stepType": "message",
           "patientMessage": "I want to book an appointment.",
           "systemResponse": "What type of appointment would you like?",
-          "latencyMs": 3602,
+          "latencyMs": 3961,
           "dialogueState": {
             "intent": "book",
             "appointmentType": null,
@@ -522,7 +522,7 @@
           "stepType": "message",
           "patientMessage": "Make it at 13:00.",
           "systemResponse": "What type of appointment would you like?",
-          "latencyMs": 1,
+          "latencyMs": 0,
           "dialogueState": {
             "intent": "book",
             "appointmentType": null,
@@ -558,7 +558,7 @@
           "stepType": "confirmation",
           "patientMessage": "yes",
           "systemResponse": "Your appointment is confirmed. Appointment ID: APT-1001",
-          "latencyMs": 0,
+          "latencyMs": 1,
           "dialogueState": {
             "intent": "book",
             "appointmentType": "general_consultation",
@@ -628,7 +628,7 @@
           "stepType": "message",
           "patientMessage": "I need an appointment on 2026-11-04.",
           "systemResponse": "What type of appointment would you like?",
-          "latencyMs": 3704,
+          "latencyMs": 4505,
           "dialogueState": {
             "intent": "book",
             "appointmentType": null,
@@ -646,7 +646,7 @@
           "stepType": "message",
           "patientMessage": "Make it at 13:00.",
           "systemResponse": "What type of appointment would you like?",
-          "latencyMs": 3699,
+          "latencyMs": 4224,
           "dialogueState": {
             "intent": "book",
             "appointmentType": null,
@@ -664,7 +664,7 @@
           "stepType": "message",
           "patientMessage": "I want a general consultation.",
           "systemResponse": "The general_consultation appointment is available on 2026-11-04 at 13:00. Would you like to confirm the booking?",
-          "latencyMs": 3946,
+          "latencyMs": 4373,
           "dialogueState": {
             "intent": "book",
             "appointmentType": "general_consultation",
@@ -682,7 +682,7 @@
           "stepType": "confirmation",
           "patientMessage": "yes",
           "systemResponse": "Your appointment is confirmed. Appointment ID: APT-1001",
-          "latencyMs": 1,
+          "latencyMs": 2,
           "dialogueState": {
             "intent": null,
             "appointmentType": null,
@@ -770,7 +770,7 @@
           "stepType": "confirmation",
           "patientMessage": "yes",
           "systemResponse": "Your appointment is confirmed. Appointment ID: APT-1001",
-          "latencyMs": 1,
+          "latencyMs": 0,
           "dialogueState": {
             "intent": "book",
             "appointmentType": "general_consultation",
@@ -840,7 +840,7 @@
           "stepType": "message",
           "patientMessage": "Book a general consultation for 2026-11-04 at 09:30.",
           "systemResponse": "The general_consultation appointment is available on 2026-11-04 at 09:30. Would you like to confirm the booking?",
-          "latencyMs": 3971,
+          "latencyMs": 4862,
           "dialogueState": {
             "intent": "book",
             "appointmentType": "general_consultation",
@@ -858,7 +858,7 @@
           "stepType": "confirmation",
           "patientMessage": "yes",
           "systemResponse": "Your appointment is confirmed. Appointment ID: APT-1001",
-          "latencyMs": 1,
+          "latencyMs": 4,
           "dialogueState": {
             "intent": null,
             "appointmentType": null,
@@ -928,7 +928,7 @@
           "stepType": "message",
           "patientMessage": "Book a general consultation on 2026-11-04 at 10:00.",
           "systemResponse": "The 10:00 slot is available. Would you like to confirm?",
-          "latencyMs": 1,
+          "latencyMs": 9,
           "dialogueState": {
             "intent": "book",
             "appointmentType": "general_consultation",
@@ -946,7 +946,7 @@
           "stepType": "message",
           "patientMessage": "Actually, change the time to 11:30.",
           "systemResponse": "The 11:30 slot is available. Would you like to confirm?",
-          "latencyMs": 1,
+          "latencyMs": 11,
           "dialogueState": {
             "intent": "book",
             "appointmentType": "general_consultation",
@@ -964,7 +964,7 @@
           "stepType": "confirmation",
           "patientMessage": "yes",
           "systemResponse": "Your appointment is confirmed. Appointment ID: APT-1001",
-          "latencyMs": 0,
+          "latencyMs": 1,
           "dialogueState": {
             "intent": "book",
             "appointmentType": "general_consultation",
@@ -1034,7 +1034,7 @@
           "stepType": "message",
           "patientMessage": "Book a general consultation on 2026-11-04 at 10:00.",
           "systemResponse": "The general_consultation appointment is available on 2026-11-04 at 10:00. Would you like to confirm the booking?",
-          "latencyMs": 4026,
+          "latencyMs": 4693,
           "dialogueState": {
             "intent": "book",
             "appointmentType": "general_consultation",
@@ -1052,7 +1052,7 @@
           "stepType": "message",
           "patientMessage": "Actually, change the time to 11:30.",
           "systemResponse": "Please provide your existing appointment ID.",
-          "latencyMs": 4583,
+          "latencyMs": 5585,
           "dialogueState": {
             "intent": "reschedule",
             "appointmentType": "general_consultation",
@@ -1195,7 +1195,7 @@
           "stepType": "message",
           "patientMessage": "I want a general consultation on 2026-11-04, but I am not sure whether I prefer 10:00 or 11:00.",
           "systemResponse": "The general_consultation appointment is available on 2026-11-04 at 10:00. Would you like to confirm the booking?",
-          "latencyMs": 4731,
+          "latencyMs": 5721,
           "dialogueState": {
             "intent": "book",
             "appointmentType": "general_consultation",
@@ -1257,7 +1257,7 @@
           "stepType": "message",
           "patientMessage": "I want to book a general consultation on 2026-11-04 at 13:00.",
           "systemResponse": "The 13:00 slot is available. Would you like to confirm?",
-          "latencyMs": 0,
+          "latencyMs": 1,
           "dialogueState": {
             "intent": "book",
             "appointmentType": "general_consultation",
@@ -1275,7 +1275,7 @@
           "stepType": "message",
           "patientMessage": "Actually, I want to cancel my existing appointment APT-001 instead.",
           "systemResponse": "You requested to cancel appointment APT-001. Are you sure you want to cancel it?",
-          "latencyMs": 8,
+          "latencyMs": 13,
           "dialogueState": {
             "intent": "cancel",
             "appointmentType": "general_consultation",
@@ -1293,7 +1293,7 @@
           "stepType": "confirmation",
           "patientMessage": "yes",
           "systemResponse": "Appointment APT-001 has been successfully cancelled.",
-          "latencyMs": 1,
+          "latencyMs": 6,
           "dialogueState": {
             "intent": "cancel",
             "appointmentType": "general_consultation",
@@ -1355,7 +1355,7 @@
           "stepType": "message",
           "patientMessage": "I want to book a general consultation on 2026-11-04 at 13:00.",
           "systemResponse": "The general_consultation appointment is available on 2026-11-04 at 13:00. Would you like to confirm the booking?",
-          "latencyMs": 4285,
+          "latencyMs": 5173,
           "dialogueState": {
             "intent": "book",
             "appointmentType": "general_consultation",
@@ -1373,7 +1373,7 @@
           "stepType": "message",
           "patientMessage": "Actually, I want to cancel my existing appointment APT-001 instead.",
           "systemResponse": "You requested to cancel appointment APT-001. Are you sure you want to cancel it?",
-          "latencyMs": 4432,
+          "latencyMs": 5389,
           "dialogueState": {
             "intent": "cancel",
             "appointmentType": null,
@@ -1391,7 +1391,7 @@
           "stepType": "confirmation",
           "patientMessage": "yes",
           "systemResponse": "Appointment APT-001 has been successfully cancelled.",
-          "latencyMs": 1,
+          "latencyMs": 4,
           "dialogueState": {
             "intent": null,
             "appointmentType": null,
@@ -1453,7 +1453,7 @@
           "stepType": "message",
           "patientMessage": "Book a general consultation on 2026-11-05 at 10:30.",
           "systemResponse": "Sorry, 10:30 is unavailable. The available times on 2026-11-05 are: 09:00, 09:30, 10:00, 11:30. Which would you prefer?",
-          "latencyMs": 1,
+          "latencyMs": 15,
           "dialogueState": {
             "intent": "book",
             "appointmentType": "general_consultation",
@@ -1515,7 +1515,7 @@
           "stepType": "message",
           "patientMessage": "Book a general consultation on 2026-11-05 at 10:30.",
           "systemResponse": "Sorry, 10:30 is unavailable on 2026-11-05. These times are available: 09:00, 09:30, 10:00, 11:30. Which time would you prefer?",
-          "latencyMs": 4225,
+          "latencyMs": 5718,
           "dialogueState": {
             "intent": "book",
             "appointmentType": "general_consultation",
@@ -1577,7 +1577,7 @@
           "stepType": "message",
           "patientMessage": "I want to book an appointment on 2026-11-04.",
           "systemResponse": "What type of appointment would you like?",
-          "latencyMs": 0,
+          "latencyMs": 4,
           "dialogueState": {
             "intent": "book",
             "appointmentType": null,
@@ -1631,7 +1631,7 @@
           "stepType": "confirmation",
           "patientMessage": "yes",
           "systemResponse": "Your appointment is confirmed. Appointment ID: APT-1001",
-          "latencyMs": 1,
+          "latencyMs": 0,
           "dialogueState": {
             "intent": "book",
             "appointmentType": "general_consultation",
@@ -1701,7 +1701,7 @@
           "stepType": "message",
           "patientMessage": "I want to book an appointment on 2026-11-04.",
           "systemResponse": "What type of appointment would you like?",
-          "latencyMs": 3728,
+          "latencyMs": 4670,
           "dialogueState": {
             "intent": "book",
             "appointmentType": null,
@@ -1719,7 +1719,7 @@
           "stepType": "message",
           "patientMessage": "By the way, can you tell me what your opening hours are?",
           "systemResponse": "What type of appointment would you like?",
-          "latencyMs": 3945,
+          "latencyMs": 4942,
           "dialogueState": {
             "intent": "book",
             "appointmentType": null,
@@ -1737,7 +1737,7 @@
           "stepType": "message",
           "patientMessage": "I want a general consultation at 13:00.",
           "systemResponse": "The general_consultation appointment is available on 2026-11-04 at 13:00. Would you like to confirm the booking?",
-          "latencyMs": 4267,
+          "latencyMs": 5198,
           "dialogueState": {
             "intent": "book",
             "appointmentType": "general_consultation",
@@ -1755,7 +1755,7 @@
           "stepType": "confirmation",
           "patientMessage": "yes",
           "systemResponse": "Your appointment is confirmed. Appointment ID: APT-1001",
-          "latencyMs": 1,
+          "latencyMs": 12,
           "dialogueState": {
             "intent": null,
             "appointmentType": null,
@@ -1825,7 +1825,7 @@
           "stepType": "message",
           "patientMessage": "Book a general consultation on 2026-11-04 at 14:00.",
           "systemResponse": "The 14:00 slot is available. Would you like to confirm?",
-          "latencyMs": 0,
+          "latencyMs": 3,
           "dialogueState": {
             "intent": "book",
             "appointmentType": "general_consultation",
@@ -1843,7 +1843,7 @@
           "stepType": "confirmation",
           "patientMessage": "no",
           "systemResponse": "No problem. What other date and time would you prefer?",
-          "latencyMs": 1,
+          "latencyMs": 9,
           "dialogueState": {
             "intent": "book",
             "appointmentType": "general_consultation",
@@ -1905,7 +1905,7 @@
           "stepType": "message",
           "patientMessage": "Book a general consultation on 2026-11-04 at 14:00.",
           "systemResponse": "The general_consultation appointment is available on 2026-11-04 at 14:00. Would you like to confirm the booking?",
-          "latencyMs": 4139,
+          "latencyMs": 5875,
           "dialogueState": {
             "intent": "book",
             "appointmentType": "general_consultation",
@@ -1985,7 +1985,7 @@
           "stepType": "message",
           "patientMessage": "Please reschedule my appointment APT-001 to 2026-11-06 at 13:00.",
           "systemResponse": "The 13:00 slot is available. Would you like to confirm rescheduling appointment APT-001?",
-          "latencyMs": 1,
+          "latencyMs": 3,
           "dialogueState": {
             "intent": "reschedule",
             "appointmentType": null,
@@ -2003,7 +2003,7 @@
           "stepType": "confirmation",
           "patientMessage": "yes",
           "systemResponse": "Appointment APT-001 has been successfully rescheduled to 2026-11-06 at 13:00.",
-          "latencyMs": 1,
+          "latencyMs": 24,
           "dialogueState": {
             "intent": "reschedule",
             "appointmentType": null,
@@ -2065,7 +2065,7 @@
           "stepType": "message",
           "patientMessage": "Please reschedule my appointment APT-001 to 2026-11-06 at 13:00.",
           "systemResponse": "The new slot is available on 2026-11-06 at 13:00. Would you like to confirm rescheduling appointment APT-001?",
-          "latencyMs": 4667,
+          "latencyMs": 5598,
           "dialogueState": {
             "intent": "reschedule",
             "appointmentType": "general_consultation",
@@ -2083,7 +2083,7 @@
           "stepType": "confirmation",
           "patientMessage": "yes",
           "systemResponse": "Appointment APT-001 has been successfully rescheduled to 2026-11-06 at 13:00.",
-          "latencyMs": 2,
+          "latencyMs": 6,
           "dialogueState": {
             "intent": null,
             "appointmentType": null,
@@ -2145,7 +2145,7 @@
           "stepType": "message",
           "patientMessage": "I want a general consultation on 2026-11-04 at 10:00. Actually, make that 2026-11-05 at 09:30.",
           "systemResponse": "The 10:00 slot is available. Would you like to confirm?",
-          "latencyMs": 1,
+          "latencyMs": 2,
           "dialogueState": {
             "intent": "book",
             "appointmentType": "general_consultation",
@@ -2163,7 +2163,7 @@
           "stepType": "confirmation",
           "patientMessage": "yes",
           "systemResponse": "Your appointment is confirmed. Appointment ID: APT-1001",
-          "latencyMs": 0,
+          "latencyMs": 1,
           "dialogueState": {
             "intent": "book",
             "appointmentType": "general_consultation",
@@ -2233,7 +2233,7 @@
           "stepType": "message",
           "patientMessage": "I want a general consultation on 2026-11-04 at 10:00. Actually, make that 2026-11-05 at 09:30.",
           "systemResponse": "The general_consultation appointment is available on 2026-11-04 at 10:00. Would you like to confirm the booking?",
-          "latencyMs": 4279,
+          "latencyMs": 5028,
           "dialogueState": {
             "intent": "book",
             "appointmentType": "general_consultation",
@@ -2251,7 +2251,7 @@
           "stepType": "confirmation",
           "patientMessage": "yes",
           "systemResponse": "Your appointment is confirmed. Appointment ID: APT-1001",
-          "latencyMs": 1,
+          "latencyMs": 3,
           "dialogueState": {
             "intent": null,
             "appointmentType": null,

@@ -14,7 +14,7 @@
         "reason": "tomorrow",
         "existingAppointmentId": null
       },
-      "latencyMs": 9862,
+      "latencyMs": 12237,
       "success": true,
       "error": null
     },
@@ -32,7 +32,7 @@
         "reason": null,
         "existingAppointmentId": null
       },
-      "latencyMs": 6787,
+      "latencyMs": 6832,
       "success": true,
       "error": null
     },
@@ -50,7 +50,7 @@
         "reason": null,
         "existingAppointmentId": null
       },
-      "latencyMs": 7503,
+      "latencyMs": 6824,
       "success": true,
       "error": null
     },
@@ -68,7 +68,7 @@
         "reason": "I want to book an appointment with a cardiologist.",
         "existingAppointmentId": null
       },
-      "latencyMs": 5398,
+      "latencyMs": 5811,
       "success": true,
       "error": null
     },
@@ -86,7 +86,7 @@
         "reason": null,
         "existingAppointmentId": null
       },
-      "latencyMs": 7164,
+      "latencyMs": 7157,
       "success": true,
       "error": null
     },
@@ -104,7 +104,7 @@
         "reason": null,
         "existingAppointmentId": null
       },
-      "latencyMs": 6110,
+      "latencyMs": 6310,
       "success": true,
       "error": null
     },
@@ -122,7 +122,7 @@
         "reason": "I need a pediatric appointment",
         "existingAppointmentId": null
       },
-      "latencyMs": 4924,
+      "latencyMs": 5581,
       "success": true,
       "error": null
     },
@@ -140,7 +140,7 @@
         "reason": null,
         "existingAppointmentId": null
       },
-      "latencyMs": 6206,
+      "latencyMs": 7034,
       "success": true,
       "error": null
     },
@@ -158,7 +158,7 @@
         "reason": "I need a pediatric appointment",
         "existingAppointmentId": null
       },
-      "latencyMs": 5942,
+      "latencyMs": 6659,
       "success": true,
       "error": null
     },
@@ -176,7 +176,7 @@
         "reason": "headache",
         "existingAppointmentId": null
       },
-      "latencyMs": 4183,
+      "latencyMs": 6021,
       "success": true,
       "error": null
     },
@@ -194,7 +194,7 @@
         "reason": "I have a headache",
         "existingAppointmentId": null
       },
-      "latencyMs": 6717,
+      "latencyMs": 7632,
       "success": true,
       "error": null
     },
@@ -212,7 +212,7 @@
         "reason": "headache",
         "existingAppointmentId": null
       },
-      "latencyMs": 6026,
+      "latencyMs": 7283,
       "success": true,
       "error": null
     },
@@ -230,7 +230,7 @@
         "reason": null,
         "existingAppointmentId": null
       },
-      "latencyMs": 5493,
+      "latencyMs": 5473,
       "success": true,
       "error": null
     },
@@ -248,7 +248,7 @@
         "reason": null,
         "existingAppointmentId": null
       },
-      "latencyMs": 7125,
+      "latencyMs": 7935,
       "success": true,
       "error": null
     },
@@ -266,7 +266,7 @@
         "reason": null,
         "existingAppointmentId": null
       },
-      "latencyMs": 6289,
+      "latencyMs": 7382,
       "success": true,
       "error": null
     },
@@ -284,7 +284,7 @@
         "reason": "sometime around 10 or 11",
         "existingAppointmentId": null
       },
-      "latencyMs": 5449,
+      "latencyMs": 6179,
       "success": true,
       "error": null
     },
@@ -302,7 +302,7 @@
         "reason": null,
         "existingAppointmentId": null
       },
-      "latencyMs": 6847,
+      "latencyMs": 7895,
       "success": true,
       "error": null
     },
@@ -320,7 +320,7 @@
         "reason": null,
         "existingAppointmentId": null
       },
-      "latencyMs": 5850,
+      "latencyMs": 6924,
       "success": true,
       "error": null
     },
@@ -338,7 +338,7 @@
         "reason": "cancel appointment APT-001",
         "existingAppointmentId": "APT-001"
       },
-      "latencyMs": 4138,
+      "latencyMs": 5056,
       "success": true,
       "error": null
     },
@@ -356,7 +356,7 @@
         "reason": null,
         "existingAppointmentId": "APT-001"
       },
-      "latencyMs": 5863,
+      "latencyMs": 7544,
       "success": true,
       "error": null
     },
@@ -374,7 +374,7 @@
         "reason": "cancel appointment APT-001",
         "existingAppointmentId": "APT-001"
       },
-      "latencyMs": 5667,
+      "latencyMs": 6799,
       "success": true,
       "error": null
     },
@@ -392,7 +392,7 @@
         "reason": "Please reschedule my appointment APT-001",
         "existingAppointmentId": "APT-001"
       },
-      "latencyMs": 4707,
+      "latencyMs": 6009,
       "success": true,
       "error": null
     },
@@ -410,7 +410,7 @@
         "reason": "I have a headache",
         "existingAppointmentId": "APT-001"
       },
-      "latencyMs": 7446,
+      "latencyMs": 8058,
       "success": true,
       "error": null
     },
@@ -428,7 +428,7 @@
         "reason": "Please reschedule my appointment APT-001",
         "existingAppointmentId": "APT-001"
       },
-      "latencyMs": 6723,
+      "latencyMs": 8924,
       "success": true,
       "error": null
     }

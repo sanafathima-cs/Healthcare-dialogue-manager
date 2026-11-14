@@ -95,8 +95,8 @@
       },
       "latency": {
         "messagesMeasured": 18,
-        "averageMs": 2,
-        "medianMs": 1
+        "averageMs": 3.6666666666666665,
+        "medianMs": 1.5
       },
       "scenarios": [
         {
@@ -278,8 +278,8 @@
       },
       "latency": {
         "messagesMeasured": 18,
-        "averageMs": 4868.944444444444,
-        "medianMs": 4513.5
+        "averageMs": 5295.388888888889,
+        "medianMs": 5100.5
       },
       "scenarios": [
         {
